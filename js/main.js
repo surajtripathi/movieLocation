@@ -90,7 +90,7 @@ $(document).ready(function() {
       initAutoComplete();
     }
     plotLocations();
-  }''
+  }
   //success handler for getting getting poster and movie url from imdb api
   function getPosterSuccessHandler(pData) {
     currentImageElement.html = ((currentImageElement.html).replace('src=""', 'src="'+pData.Poster+'"')).replace('href=""','href="http://www.imdb.com/title/'+pData.imdbID+'/"');
